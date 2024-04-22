@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        h1{
+            text-align: center;
+            color :blue;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+@media (max-width: 768px) {
+  .center {
+    height: auto;
+  }
+}
+.margin{
+    margin: 20%;
+}
+.btn{
+    padding: 5px;
+    margin: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    
+}
+button:hover{
+    background-color:aqua;
+}
+       
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Login
+        </h1>
+    </header>
+    <main>
+        
+        <div class="center">
+            <form action="shuffle.php" method="post">
+                <fieldset class="margin">
+                    <legend>Sign in :</legend>
+                    <label for="ID">ID :</label><br>
+                    <input type="text"required name="id" id="id"><br>
+                    <label for="pswd">Password :</label><br>
+                    <input type="password"required name="pswd" id="pswd"><br>
+                    <center>
+                        <button class="btn" type="submit">Login</button>
+                    </center>
+                </fieldset>
+            </form>
+        </div>
+   
+    </main>
+    
+</body>
+</html>
